@@ -19,7 +19,7 @@
    - ```.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list ```
 * Window 4 - Run Kafka Producer: Type messages here.
    - ``` .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic GD-Mssages ```
-Now type your messages in this powershell window.
+   - *Now type your messages in this powershell window.
 
 * Window 5 - Run Kafka Consumer: To display Messages.
    - ``` .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic GD-Messages --from-beginning```
