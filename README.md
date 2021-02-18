@@ -11,15 +11,15 @@
  ### Different PowerShell windows will be used for each process mentioned below and keep all the windows open.
 
  * Window 1 - Run Zookeeper Service
-* * ``` .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties```
+   - ``` .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties```
 * Window 2 - Run Kafka Service 
-* * ``` .\bin\windows\kafka-server-start.bat .\config\server.properties ```
+   - ``` .\bin\windows\kafka-server-start.bat .\config\server.properties ```
 * Window 3 : To create and display the topics created.
-* * ```.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic GD-Messages ```
-* * ```.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list ```
+   - ```.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic GD-Messages ```
+   - ```.\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list ```
 * Window 4 - Run Kafka Producer: Type messages here.
-* * ``` .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic GD-Mssages ```
+   - ``` .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic GD-Mssages ```
 Now type your messages in this powershell window.
 
 * Window 5 - Run Kafka Consumer: To display Messages.
-* * ``` .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic GD-Messages --from-beginning```
+   - ``` .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic GD-Messages --from-beginning```
